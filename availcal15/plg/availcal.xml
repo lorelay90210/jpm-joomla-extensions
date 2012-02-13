@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content"  method="upgrade">
+	<name>Availability Calendar Plugin</name>
+	<author>Jan Maat</author>
+	<creationDate>January 27, 2011</creationDate>
+	<copyright>This extension in released under the GNU/GPL License -
+		http://www.gnu.org/copyleft/gpl.html</copyright>
+	<authorEmail>jan.maat@hetnet.nl</authorEmail>
+	<version>1.1</version>
+	<description>Displays the Availability Calendar</description>
+
+
+	<files>
+		<filename plugin="availcal">availcal.php</filename>
+	</files>
+	<params>
+		<param name = "nbr_months" type = "text" size = "2" default = "3" label = "NBR_OF_MONTHS" description = "MONTHS_DISPLAY" />
+	</params>
+	<languages>
+		<language tag="nl-NL">nl-NL.plg_content_availcal.ini</language>
+		<language tag="en-GB">en-GB.plg_content_availcal.ini</language>
+		<language tag="de-DE">de-DE.plg_content_availcal.ini</language>
+	</languages>
+</install>

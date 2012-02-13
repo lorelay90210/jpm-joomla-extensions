@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h1>Availability Calendar</h1>
+De Availability Calender plaatst in een artikel d.m.v. een kalender weergave de vrij/bezet status van een object.   
+Deze extensie bestaat uit een &quot;administration&quot; component com_availcal en een plugin plg_availcal.
+Via de component worden de bezette periodes (dark periods) ingevuld.<br />
+	  Input:<br />
+<table width="500" border="0">
+  <tr>
+    <td width="91">Naam</td>
+    <td width="399">de naam van het object</td>
+  </tr>
+  <tr>
+    <td>Startdatum</td>
+    <td> de eerste dag van de &quot;bezette&quot; periode  (jjjj-mm-dd)</td>
+ 
+  </tr>
+  <tr>
+    <td>Einddatum</td>
+    <td>de laatste dag van de &quot;bezette&quot; periode (jjjj-mm-dd)</td>
+  </tr>
+  <tr>
+    <td>Bezet</td>
+    <td>deels of geheel. Hiermee kan aangegeven worden of het object beperkt of niet beschikbaar is in de periode</td>
+  </tr>
+  <tr>
+    <td>Opmerking</td>
+    <td>optioneel en wordt alleen getoonde in de administratie component</td>
+  </tr>
+</table>
+<p>Door {availcal=&quot;naam&quot;} in een artikel te plaatsen wordt de &quot;bezet&quot; status getoond.<br />
+	  D.m.v. de plugin configuratie wordt het aantal getoonde maanden (vanaf de huidige maand) bepaald.
+	</p>
+	<h2>Invoer van Darkperiods d.m.v. een XML file
+</h2>
+	<p>Voor synchronisatie met andere applicaties is een functie beschikbaar om een XML file in te lezen, UploadXML.</p>
+	<p>De root node van het XML document is "objects".<br />
+	  Vervolgens is er de "object" node (kind node), 
+      <object name="xxx"> 
+  </object> 
+	  met als attribuut  de naam van het object.<br />
+De object node omsluit 4 andere nodes startdate, enddate, busy en optioneel remark. Startdate en enddate hebben het formaat yyyy/mm/dd.
+	  <br />
+	  Voor busy is de waarde 0 gedeeltelijk bezet, de waarde 1 voor volledig bezet en de waarde 2 voor niet bezet.<br />
+Deze laatste waarde is er voor die applicaties die alleen een volledig kalender in XML formaat kunnen genereren. <br />
+Availcal slaat de periodes met een busy waarde 2 over.    </p>
+	<p>Het bestand availcal_02.zip bevat een voorbeeld XML file anderespanje.xml en een XMLSchema availcalXMLschema.xsd. </p>
+</body>
+</html>

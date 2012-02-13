@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+	busy 0 = partly busy
+	busy 1 = fully busy
+	busy 2 = free May occur in the XML file but is skipped by availcal
+	date format = yyyy/mm/dd
+-->
+<objects>
+	<object name="P0101">		
+			<darkperiod>
+				<startdate>2010/12/04</startdate>
+				<enddate>2010/12/08</enddate>
+				<busy>1</busy>
+				<remark>Dit is een opmerking</remark>
+			</darkperiod>
+			<darkperiod>
+				<startdate>2010/12/30</startdate>
+				<enddate>2011/01/09</enddate>
+				<busy>0</busy>
+				<remark>Dit is een opmerking</remark>
+			</darkperiod>
+			<darkperiod>
+				<startdate>2011/01/03</startdate>
+				<enddate>2011/01/09</enddate>
+				<busy>2</busy>
+				<remark>Dit is een opmerking</remark>
+			</darkperiod>
+	</object>	
+	<object name="P0102">		
+			<darkperiod>
+				<startdate>2010/12/04</startdate>
+				<enddate>2010/12/08</enddate>
+				<busy>1</busy>
+				<remark>Dit is een opmerking</remark>
+			</darkperiod>
+			<darkperiod>
+				<startdate>2010/12/30</startdate>
+				<enddate>2011/01/09</enddate>
+				<busy>0</busy>
+				
+			</darkperiod>
+	</object>
+</objects>

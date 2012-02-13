@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+	<name>availcal</name>
+	<author>Jan Maat</author>
+	<copyright>Copyright (C) 2009-2012 </copyright>
+	<creationDate>January 2012</creationDate>
+	<license>GNU/GPL</license>
+	<authorEmail>jenj.maat@gmail.com</authorEmail>
+	<authorUrl></authorUrl>
+	<version>04.03</version>
+	<description>COM_AVAILCAL_DESCRIPTION</description>
+	
+	<!-- Install/Uninstall Section -->
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install>
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	<!-- Site Main File Section -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>availcal.php</filename>
+		<filename>controller.php</filename>
+		<folder>views</folder>
+		<folder>models</folder>
+	</files>
+
+
+	
+	
+	
+	<!-- Administration File Section -->
+	<administration>
+	
+		<menu>Availability Calendar</menu>
+		<submenu>
+			<menu link="option=com_availcal">Dark Periods</menu>	
+			<menu link="option=com_availcal&amp;task=uploadform">Xml Upload</menu>		
+		</submenu>
+		
+		<files folder="admin">
+			<folder>sql</folder>
+			<filename>help/index.html</filename>
+			<filename>help/en-GB/help.html</filename>
+			<filename>help/nl-NL/help.html</filename>
+			
+			<filename>assets/index.html</filename>
+			<filename>assets/plg_css.css</filename>
+			
+			<filename>models/darkperiod.php</filename>
+			<filename>models/darkperiods.php</filename>
+			<filename>models/xmlupload.php</filename>
+			<filename>models/index.html</filename>
+			
+			<filename>tables/darkperiod.php</filename>
+			<filename>tables/index.html</filename>
+			
+			<filename>views/darkperiod/view.html.php</filename>
+			<filename>views/darkperiod/index.html</filename>
+			<filename>views/darkperiod/tmpl/default.php</filename>			
+			<filename>views/darkperiod/tmpl/index.html</filename>
+			
+			<filename>views/darkperiods/view.html.php</filename>
+			<filename>views/darkperiods/index.html</filename>
+			<filename>views/darkperiods/tmpl/default.php</filename>
+			<filename>views/darkperiods/tmpl/index.html</filename>
+			
+			<filename>views/xmlupload/view.html.php</filename>
+			<filename>views/xmlupload/index.html</filename>
+			<filename>views/xmlupload/tmpl/default.php</filename>
+			<filename>views/xmlupload/tmpl/default_form.php</filename>			
+			<filename>views/xmlupload/tmpl/index.html</filename>			
+			<filename>admin.availcal.php</filename>			
+			<filename>controller.php</filename>					
+			<filename>index.html</filename>
+			
+		</files>
+		
+		<languages folder="admin">
+			<language tag="nl-NL">language/nl-NL/nl-NL.com_availcal.ini</language>
+			<language tag="nl-NL">language/nl-NL/nl-NL.com_availcal.sys.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_availcal.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_availcal.sys.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_availcal.ini</language>
+			<language tag="de-DE">language/de-DE/de-DE.com_availcal.sys.ini</language>
+			<language tag="es-ES">language/es-ES/es_ES.com_availcal.ini</language>
+			<language tag="es-ES">language/de-DE/es-ES.com_availcal.sys.ini</language>
+		</languages>
+					
+	</administration>
+	
+	
+
+</extension>
+
