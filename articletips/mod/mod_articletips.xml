@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="module"
+	version="0.0.1" client="site"
+	method="upgrade">
+	<name>ARTICLE_TIPS</name>
+	<author>Jan Maat</author>
+	<creationDate>Oct 2011</creationDate>
+	<copyright>Copyright (C) 2011 Jan Maat All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>jenj.maat@hetnet.nl</authorEmail>		
+	<version>0.0.1</version>	
+	<description>MOD_ARTICLETIPS_XML_DESCRIPTION</description>
+	
+	<files>
+		<filename module="mod_articletips">mod_articletips.php</filename>
+		<filename>mod_articletips.xml</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/index.html</filename>		
+	</files>
+	<languages folder="language">
+		<language tag="en-GB">en-GB.mod_articletips.ini</language>
+		<language tag="en-GB">en-GB.mod_articletips.sys.ini</language>
+		<language tag="nl-NL">nl-NL.mod_articletips.ini</language>
+		<language tag="nl-NL">nl-NL.mod_articletips.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/administrator/components/com_content/models/fields/modal">
+			<fieldset name="basic">
+
+				<field
+					name="count" id="count"				
+					type="text"
+					default="5"
+					label="COUNT"
+					description="THE_NUMBER_OF_ITEMS_TO_DISPLAY">
+					</field>
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="Module Class suffix"
+					description="MODULE_CLASS_SUFFIX" />
+				<field
+					name="article_1"
+					type="Modal_Article"					
+					label="ARTICLE_1"
+					description="ARTICLE_TO_DISPLAY">
+					</field>
+				<field
+					name="article_2"
+					type="Modal_Article"					
+					label="ARTICLE_2"
+					description="ARTICLE_TO_DISPLAY">
+					</field>
+				<field
+					name="article_3"
+					type="Modal_Article"					
+					label="ARTICLE_3"
+					description="ARTICLE_TO_DISPLAY">
+					</field>
+					<field
+					name="article_4"
+					type="Modal_Article"					
+					label="ARTICLE_4"
+					description="ARTICLE_TO_DISPLAY">
+					</field>
+					<field
+					name="article_5"
+					type="Modal_Article"					
+					label="ARTICLE_5"
+					description="ARTICLE_TO_DISPLAY">
+					</field>
+					<field
+					name="article_6"
+					type="Modal_Article"					
+					label="ARTICLE_6"
+					description="ARTICLE_TO_DISPLAY">
+					</field>
+					<field
+					name="article_7"
+					type="Modal_Article"					
+					label="ARTICLE_7"
+					description="ARTICLE_TO_DISPLAY">
+					</field>
+					<field
+					name="article_8"
+					type="Modal_Article"					
+					label="ARTICLE_8"
+					description="ARTICLE_TO_DISPLAY">
+					</field>
+					<field
+					name="article_9"
+					type="Modal_Article"					
+					label="ARTICLE_9"
+					description="ARTICLE_TO_DISPLAY">
+					</field>
+					<field
+					name="article_10"
+					type="Modal_Article"					
+					label="ARTICLE_10"
+					description="ARTICLE_TO_DISPLAY">
+					</field>
+			</fieldset>
+		</fields>
+	</config>		
+</extension>
