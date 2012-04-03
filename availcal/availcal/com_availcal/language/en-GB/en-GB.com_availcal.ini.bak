@@ -1,0 +1,52 @@
+; English translation for the Availability Calendar
+; Transalation edited by Robert Wessels, Natural Genius Designs, David Huebner and Pedro Manuel Baeza
+; Copyright (C) 2009 Jan Maat. All rights reserved.
+; License http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL, see LICENSE.php
+; Note : All ini files need to be saved as UTF-8 - No BOM
+; General
+
+ID="ID"
+NAAM="Name"
+BUSY="Busy"           
+FULL="Full"
+PARTLY="Partly"
+START_DATUM="Start Date"
+EIND_DATUM="End Date"
+OPMERKING="Remark"
+WRONG_XML="XML file not correct"
+UPLOAD_ERROR="Upload Error"
+READY="File converted and writen into the database"
+SAVED="Darkperiod Saved"
+NO_SELECTION="No dakperiods were selected for removal"
+DELETED="Darkperiods Deleted"
+CANCELLED="Cancelled"
+COM_AVAILCAL_AVAILCAL_ERROR_UNACCEPTABLE="Er zijn verkeerde waardes ingevuld"  
+COM_AVAILCAL_AVAILCAL_ERROR_DATE="Start datum moet kleiner zijn dan de eind datum"  
+COM_AVAILCAL_DETAILS="Darkperiod details" 
+ERROR_UPLOAD="Error uploading file"
+ERROR_DELETE="Error deleting file"
+XML_UPLOAD="Availability Calendar XML Upload"
+EDIT="Edit"
+ADD="Add"
+DARK_PERIODS="Availability Calendar Darkperiods"
+FILTER="FILTER"
+RESET="Reset"
+SEARCH="Search"
+CLOSE="Close"
+DETAILS="Details"
+COM_AVAILCAL_UPLOAD_FILE="Upload File"
+UPLOAD_XML_FILE="XML File"
+XML_FILE="File"
+COM_AVAILCAL_PLEASE_SELECT_A_FILE="Select a file" 
+ 
+;tooltips
+
+TIP_001="Put the name of the object here. (Case-sensitive)."
+
+TIP_002="Put the start date here yyyy/mm/dd for example 2010/10/30"
+
+TIP_003="Pute the end date here yyyy/mm/dd for example 2010/10/30"
+
+TIP_004="Optional remarks"
+
+TIP_005="Choose between full or partly"
