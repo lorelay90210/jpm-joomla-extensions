@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<h1>Availability Calendar</h1>
+    <p>The Availability Calendar puts in an article the free/busy  status of an object. This in a calendar format.
+<p>This extension consists of an administration component &quot;com_availcal&quot; and the plugin plg_availcal.
+<p>Input of the darkperiods through the component. <br />
+	  Input:<br />
+<table width="500" border="0">
+  <tr>
+    <td width="86">Name</td>
+    <td width="404">the name of the  object</td>
+  </tr>
+  <tr>
+    <td>Startdate</td>
+    <td> the first day of the dark period  (yyyy-mm-dd)</td>
+ 
+  </tr>
+  <tr>
+    <td>Enddate</td>
+    <td>the last day of the dark period  (yyyy-mm-dd)</td>
+  </tr>
+  <tr>
+    <td>Busy</td>
+    <td>partly or full. An option to show that the object is partly or not available.</td>
+  </tr>
+  <tr>
+    <td>Remark</td>
+    <td>Optional and only used in the administration component</td>
+  </tr>
+</table>
+	<p>	  With 
+    {availcal=&quot;naam&quot;} placed in an article the busy status is shown.<br />
+    In the plugin configuration the number of months (from the present one on) can be set.</p>
+	<h2>Imports of Darkperiods through an XML file
+</h2>
+<p>A function UploadXML is available for synchronization with other applications.  This  function uploads an XML. 
+  <br />
+  The root node of the XML document is "objects", <objects></objects> 
+  <br />
+Next there is an "object" node (child node), <object name="xxx"></object> and has one attribute ,name. 
+  <br />
+  The object node encloses four other nodes startdate, endDate, busy and optional remark. 
+  <br />
+  Start Date endDate and have the format yyyy / mm / dd. 
+  Busy for the value 0 partially occupied, the value 1 for a fully occupied and the value of 2 for not occupied. <br />
+  This latter value is for those applications that only generates  a complete calendar in XML format.
+  <br />
+  Availcal skips the busy periods with a value 2.</p>
+<p>The  availcal_02.zip file contains a sample XML file (anderespanje.xml) and an XMLSchema (availcalXMLschema.xsd). </p>
+
+</body>
+</html>

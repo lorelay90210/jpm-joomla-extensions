@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/components/com_availcal/models/fields">
+		
+		<field name="name" type="text" label="FILE_NAAM" description="TIP_001"
+			size="40" class="inputbox" required="true" default="" />
+		
+	</fieldset>
+</form>
+

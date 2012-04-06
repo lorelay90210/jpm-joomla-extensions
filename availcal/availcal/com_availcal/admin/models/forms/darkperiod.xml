@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/components/com_availcal/models/fields">
+		<field name="id" type="hidden" />
+		<field name="name" type="text" label="NAAM" description="TIP_001"
+			size="40" class="inputbox" required="true" default="" />
+		<field name="busy" type="list" default="" label="BUSY"
+			description="TIP_005">
+			<option value="1">FULL</option>
+			<option value="0">PARTLY</option>
+		</field>
+		<field name="start_date" type="calendar" default="2012-03-05"
+			label="START_DATUM" description="TIP_002" format="%Y-%m-%d" />
+		<field name="end_date" type="calendar" default="2012-03-06"
+			label="EIND_DATUM" description="TIP_003" format="%Y-%m-%d" />
+		<field name="remarks" type="text" label="OPMERKING" description="TIP_004"
+			size="40" class="inputbox" default="" />
+	</fieldset>
+</form>
+
